@@ -38,18 +38,11 @@ int evaluateExpression(int a, char op, int b) {
 }
 
 int main() {
-    cout << "1. Reverse String" << endl;
     reverseString("Hello");
     
-    cout << "\n2. Parenthesis Balancing" << endl;
-    cout << "((())): " << (isBalanced("((()))") ? "Balanced" : "Not Balanced") << endl;
-    cout << "((()): " << (isBalanced("((()") ? "Balanced" : "Not Balanced") << endl;
+    cout << "Balanced: " << (isBalanced("((()))") ? "Yes" : "No") << endl;
     
-    cout << "\n3. Expression Evaluation" << endl;
     cout << "5 + 3 = " << evaluateExpression(5, '+', 3) << endl;
-    cout << "10 - 4 = " << evaluateExpression(10, '-', 4) << endl;
-    cout << "6 * 7 = " << evaluateExpression(6, '*', 7) << endl;
-    cout << "20 / 4 = " << evaluateExpression(20, '/', 4) << endl;
     
     return 0;
 }
